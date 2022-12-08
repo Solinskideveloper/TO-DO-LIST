@@ -1,15 +1,8 @@
 {
     const tasks = [
-        {
-            content: "nagrac lekecje",
-            done: false,
 
-        },
-        {
-            content: "zjesc pierogi",
-            done: true,
-        },
     ];
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -17,13 +10,14 @@
 
         render();
     };
-    const removeTask = (index) => {
-        tasks.splice(index, 1);
+
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskindex].done;
+        tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     };
 
@@ -44,9 +38,7 @@
                 toggleTaskDone(index);
             });
         });
-
-    }
-
+    };
 
     const render = () => {
         let htmlString = "";
@@ -59,14 +51,14 @@
             <button class = "js-done">zrobione?</button>
             <button class = "js-remove">usuń</button>
             ${task.content}
-            </li>
+            </li>s
             `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-
+        bindEvents();
     };
-    bindEvent();
+
 
 
     const onFormSubmit = (event) => {
@@ -85,8 +77,8 @@
 
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("submit", onFormSubmit)
+        form.addEventListener("submit", onFormSubmit);
     };
 
     init();
-}
+};

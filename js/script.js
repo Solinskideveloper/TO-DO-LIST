@@ -51,7 +51,7 @@
             <button class = "js-done">zrobione?</button>
             <button class = "js-remove">usuń</button>
             ${task.content}
-            </li>s
+            </li>
             `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;

@@ -1,0 +1,10 @@
+.section {
+    background: white;
+    margin-bottom: 10px;
+}
+
+.section__title{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid  hsl(0, 10%, 89%);;
+}

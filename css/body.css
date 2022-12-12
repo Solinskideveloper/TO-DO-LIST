@@ -1,0 +1,6 @@
+.body{
+    background: hsl(0, 10%, 89%);
+    margin:0 auto;
+    max-width: 800px;
+    padding:20px
+}

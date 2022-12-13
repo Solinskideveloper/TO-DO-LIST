@@ -8,7 +8,7 @@ This is my third project as a Frontend Developer.
 
 ## How it works
 
-![TO DO LIST]()
+![TO DO LIST](https://github.com/Patryk-Solinski/TO-DO-LIST/blob/master/images/to-do-list.gif?raw=true)
 
 ## Technologies used in the homepage:
 - HTML

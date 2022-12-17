@@ -66,8 +66,8 @@
         let htmlString = "";
         if (tasks.length) {
             htmlString = `
-        <button class="section__button section__button--listHeader js-hideDoneButton">${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}</button>
-        <button class="section__button section__button--listHeader js-allDoneButton">${tasks.every(({ done }) => done) ? "disabled" : ""}Ukończ wszystkie</button>
+        <button class="section__button  js-hideDoneButton">${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}</button>
+        <button class="section__button  js-allDoneButton">${tasks.every(({ done }) => done) ? "disabled" : ""}Ukończ wszystkie</button>
         `;
 
         }

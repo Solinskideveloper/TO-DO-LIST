@@ -14,7 +14,7 @@
 .section__body {
     padding: 15px;
     margin-bottom: 10px;
-    
+
 }
 
 .section__button {
@@ -23,22 +23,41 @@
     color: hsl(180, 100%, 25%);
     transition: 0.8s;
     font-size: 15px;
-    
-}
-.section__button:hover{
-    color:hsl(180, 100%, 30%);
+
 }
 
-.section__h2{
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__h2 {
     padding: 0;
     font-size: 20px;
     margin: 0;
 }
 
-.section__header--grid{
+.section__header--grid {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+}
+
+.headerButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .section__header--grid {
+        grid-template-columns: 1fr;
+    }
+
+    .headerButtons {
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-gap: 15px;
+    }
 }

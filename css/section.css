@@ -4,7 +4,7 @@
     box-shadow: 0 0 5px #ddd;
 }
 
-.section__title {
+.section__header {
     display: grid;
     grid-template-columns: 1fr auto;
     border-bottom: 1px solid hsl(0, 10%, 89%);

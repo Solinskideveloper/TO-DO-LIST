@@ -1,6 +1,7 @@
 .section {
     background: white;
     margin-bottom: 10px;
+    box-shadow: 0 0 5px #ddd;
 }
 
 .section__title {

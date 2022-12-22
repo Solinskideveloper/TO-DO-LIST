@@ -5,13 +5,16 @@
 }
 
 
-.tasks__listItem {
+.tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     padding: 15px;
     align-items: center;
     border-bottom: 1px solid hsl(0, 10%, 89%);
+}
+.tasks__item--hidden{
+    display: none;
 }
 
 .tasks__content {

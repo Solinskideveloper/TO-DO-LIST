@@ -11,27 +11,27 @@
     };
 
     const removeTask = (taskIndex) => {
-       tasks = [
-        ...tasks.slice(0,taskIndex),
-        ...tasks.slice(taskIndex+1),
-       ];
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+        ];
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
         tasks = [
-            ...tasks.slice(0,taskIndex),
+            ...tasks.slice(0, taskIndex),
             {
                 ...tasks[taskIndex],
                 done: !tasks[taskIndex].done,
             },
-            ...tasks.slice(taskIndex+1),
+            ...tasks.slice(taskIndex + 1),
         ];
         render();
     };
 
     const allDone = () => {
-        tasks = tasks.map((task)=>({
+        tasks = tasks.map((task) => ({
             ...task,
             done: true,
         }));
@@ -60,6 +60,22 @@
             });
         });
     };
+
+    const bindButtonsEvents = () => {
+        const hideDoneButton = documnet.querySelector(".js-hideDoneButton");
+        if(hideDoneButton){
+            hideDoneButton.addEventListener("click", () =>{
+                hideDone();
+            });
+        }
+        const allDoneButton = document.querySelector(".js-allDoneButton");
+        if(hideDoneButton){
+            allDoneButton.addEventListener("click",()=>{
+                allDone();
+            });
+        }
+    
+    
 
     const renderTasks = () => {
         let htmlString = "";
@@ -132,4 +148,4 @@
 
     init();
 
-};
+    }}

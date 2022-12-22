@@ -19,8 +19,14 @@
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks = tasks.map();
-
+        tasks = [
+            ...tasks.slice(0,taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done,
+            },
+            ...tasks.slice(taskIndex+1),
+        ];
         render();
     };
 
@@ -70,7 +76,7 @@
         if (tasks.length) {
             htmlString = `
         <button class="section__button  js-hideDoneButton">${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}</button>
-        <button class="section__button  js-allDoneButton">${tasks.every(({ done }) => done) ? "disabled" : ""}Ukończ wszystkie</button>
+        <button class="section__button  js-allDoneButton">${tasks.every(({ done }) => done) ? disabled : ""}Ukończ wszystkie</button>
         `;
 
         }

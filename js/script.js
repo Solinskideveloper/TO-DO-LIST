@@ -98,15 +98,17 @@
 
         if (tasks.length !== 0) {
             buttonsHTMLContent = `
-        <button 
-        class="section__button  js-hideShowDoneTask"
-            ${tasks.some(({ done }) => done) ? "" : "disabled"}>
+            <button 
+            class="section__button  js-hideShowDoneTask"
+           
+        >
             ${hideDoneTasks === true ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
         <button 
-        class="section__button  js-toggleAllDoneTask"
-             ${tasks.every(({ done }) => done) ? "disabled" : ""}>
-        Ukończ wszystkie
+            class="section__button  js-toggleAllDoneTask"
+            ${tasks.every(({ done }) => done) ? "disabled" : ""}
+        >
+            Ukończ wszystkie
         </button>
         `;
 

@@ -19,15 +19,18 @@
 
 .section__button {
     border: none;
-    background-color: white;
+    background-color: transparent;
     color: hsl(180, 100%, 25%);
-    transition: 0.8s;
+    transition: color 0.8s;
     font-size: 15px;
-
 }
 
 .section__button:hover {
     color: hsl(180, 100%, 35%);
+}
+
+.section__button:disabled {
+    color: #ccc;
 }
 
 .section__h2 {

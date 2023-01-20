@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-
 .tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;

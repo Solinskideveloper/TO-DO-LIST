@@ -17,7 +17,7 @@
 
 }
 
-.section__button {
+.buttons__button {
     border: none;
     background-color: transparent;
     color: hsl(180, 100%, 25%);
@@ -25,11 +25,11 @@
     font-size: 15px;
 }
 
-.section__button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.section__button:disabled {
+.buttons__button:disabled {
     color: #ccc;
 }
 
